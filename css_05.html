@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 주요 선택자 정리</title>
+  <style>
+   /*전체 선택자 - 모든 요소에 스타일 적용*/
+  *{
+    속성:속성값;
+    속성:속성값;
+   }
+
+   /*태그 선택자 - 특정 태그를 사용한 요소에 스타일 적용*/
+   p{
+     font-size: 12px; /*글자 크기*/
+     font-family: 돋움; /*글꼴*/
+   }
+
+   /*클래스 선택자 - 특정 부분에 스타일 적용*/
+   .bluetext{
+     color: blue;
+   }
+
+   h2.bluetext{
+     color: blue;   /*h2태그를 사용한 요소 중 class="bluetext" 가 사용된 부분만 적용됨*/
+   }
+
+   .redtext{
+     color: red;   /*요소 전체가 아닌 일부에만 적용하고 싶다면 = <span>태그 사용*/
+   }
+
+  /*id 선택자 - 특정 부분에 스타일 적용*/
+   #container{
+     background: #ff6a00; /*배경색*/
+     width: 400px; /*너비*/
+     height: 200px; /*높이*/
+     margin: 0 auto; /*가로로 중앙에 배치*/
+   }
+  </style>
+</head>
+<body>
+  <!--클래스 선택자 예시-->
+  <h2 class="bluetext">태그 사용한 요소 중 클래스가 사용된 부분만 적용</h2>
+
+  <!--클래스 선택자 예시-->
+  <p>요소의 전체가 아닌 <span class="redtext">일부에만</span> 적용되는 예시</p>
+
+  <!--id 선택자 예시-->
+  <div id="container"></div>
+</body>
+</html>
