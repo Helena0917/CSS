@@ -1,0 +1,46 @@
+/*CSS 텍스트 관련 스타일 정리*/
+
+/*글꼴 관련 스타일*/
+
+p{
+  font-family : 굴림; /*글꼴*/
+  font-family : "맑은 고딕", 돋움, 굴림; /*지정 글꼴이 없을 수 있음을 대비해 더 추가*/
+
+  @font-face {                                         /*웹 폰트 사용*/
+    font-family: 글꼴 이름;
+    src: url(글꼴 파일 경로) format(파일 유형);
+  }
+
+  font-size: 25px; /*글자 크기 조절*/
+  /*
+    font-size: 절대크기 | 상대크기 | 크기 | 백분율;
+    절대크기 (브라우저 지정크기) : xx-small,x-small,small,medium,large,x-large,aa-large
+    상대크기 (부모 요소 글자크기 기준 표시) : larger,smaller
+    크기 (브라우저 상관없이 직접 지정)
+    백분율 (부모 요소 글자크기 기준 % 계산해 표시(%와 함께 표기))
+    단위 = em,ex,px,pt
+  */
+
+  font-weight: normal; /*글자 굵기 지정*/
+  /*
+    normal(일반적인 형태의 기본값) | bold, lighter, bolder | 100~900(백단위) 수치
+  */
+
+  font-variant: normal; /*작은 대문자로 표시*/
+  /*
+    normal : 일반적인 형태로 표시
+    small-caps : 작은 대문자로 표시
+  */
+
+  font-style: normal; /*글자 스타일 지정*/
+  /*
+    normal : 일반적인 형태로 표시
+    italic : 이탤릭체로 표시(기울어진 글꼴이 처음부터 디자인됨)<주로 사용>
+    oblique : 이탤릭체로 표시(원래 글꼴을 단지 기울어지게 표시)
+  */
+
+  font : 16px/25px "맑은 고딕" /*글꼴 속성 한꺼번에 묶어 표현*/
+  /*
+    font-size와 line-height(줄 간격 조절)는 슬래시로 연결해 함께 표현
+  */
+}

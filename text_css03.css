@@ -1,0 +1,46 @@
+/*CSS 텍스트 관련 스타일 정리*/
+
+/*문단 관련 스타일*/
+
+p{
+  direction: ltr;   /*글자 쓰기 방향 지정*/
+  /*
+    ltr : 왼쪽에서 오른쪽으로(left-to-right) 텍스트 표시(기본값)
+    rtl : 오른쪽에서 왼쪽으로(right-to-left) 텍스트 표시
+  */
+
+  text-align: center;   /*텍스트 정렬*/
+  /*
+    start : 현재 텍스트 줄의 시작 위치에 맞추어 문단 정렬
+    end : 현재 텍스트 줄의 끝 위치에 맞추어 문단 정렬
+    left : 왼쪽에 맞추어 문단 정렬
+    right : 오른쪽에 맞추어 문단 정렬
+    center : 가운데 맞추어 문단 정렬
+    justify : 양쪽에 맞추어 문단 정렬
+    match-parent : 부모 요소에 따라 문단 정렬
+  */
+
+  text-justify: auto;   /*정렬 시 공백 조절*/
+  /*
+    auto : 웹 브라우저에서 자동 지정
+    none : 정렬하지 않음
+    inter-word : 단어 사이 공백 조절해 정렬
+    distribute : 인접한 글자 사이 공백을 똑같이 맞추어 정렬
+  */
+
+  text-indent: 15px;    /*텍스트 들여 쓰기*/
+  text-indent: 5%;      /*문단의 첫 글자를 얼마나 들여 쓸지 지정*/
+
+  line-height: normal;    /*줄 간격 조절*/
+  line-height: 2;
+  /*
+    두 줄 이상의 글일 경우 | normal, 숫자, 크기, 백분율, inherit
+  */
+
+  text-overflow: clip;    /*넘치는 텍스트 표기*/
+  /*
+    clip : 넘치는 텍스트를 자름
+    ellipsis : 말 줄임표(…)로 잘린 텍스트 표시
+  */
+
+}
