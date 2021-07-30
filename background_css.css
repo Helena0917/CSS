@@ -1,0 +1,72 @@
+/*색상과 배경을 위한 스타일*/
+
+/*배경색과 배경 이미지*/
+
+p{
+  /*배경 색 지정*/
+  background-color: green;
+  background-color: #00ff00;
+  background-color: rgb(0,255,0);
+
+  /*배경 적용 범위 조절*/
+  background-clip: border-box;
+  /*
+    border-box : 박스 모델의 가장 외곽인 테두리(border)까지 적용
+    padding-box : 박스 모델에서 테두리를 뺀 패딩(padding) 범위까지 적용
+    content-box : 박스 모델에서 내용 부분에만 적용
+  */
+
+  /*웹 요소에 배경 이미지 넣기*/
+  background-image: url('파일 경로'); /*파일 경로에 작은 따옴표 or 큰 따옴표 or 안붙여도 됨*/
+
+  /*배경 이미지 반복 방법 지정*/
+  background-repeat: repeat;
+  /*
+    repeat : 브라우저 화면 가득찰 때까지 가로,세로 반복
+    repeat-x : 브라우저 창 너비와 같아질 때까지 가로 반복
+    repeat-y : 브라우저 창 높이와 같아질 때까지 세로 반복
+    no-repeat : 배경 이미지를 한 번만 표시, 반복 안함
+  */
+
+  /*배경 이미지 크기 조절*/
+  background-size: auto;
+  background-size: 200px 150px; /*크기값*/
+  background-size: 60% 40%;     /*백분율 값*/
+  background-size: 100% 100%;   /*요소의 너비와 높이 맞게 이미지 확대/축소*/
+  /*
+    auto : 원래 배경 이미지 크기만큼 표시
+    contain : 요소 안 배경 이미지가 다 들어가도록 이미지 확대/축소
+    cover : 배경 이미지로 요소 모두 덮도록 이미지 확대/축소
+    <크기값> : 너비 값, 높이 값 지정
+    <백분율> : 배경 이미지가 들어갈 요소의 크기 기준으로 백분율 값 지정. 그 크기에 맞게 배경 이미지 확대/축소
+  */
+
+  /*배경 이미지 위치 조절*/
+  background-position: 수평위치 수직위치;
+  background-position: left top;
+  background-position: 30% 60%; /*백분율%*/
+  background-position: 30px 20px; /*길이px*/
+  /*
+    수평위치 : left | center | right | 백분율 | 길이 값
+    수직위치 : top | center | bottom | 백분율 | 길이 값
+  */
+
+  /*배경 이미지 배치할 기준 조절*/
+  background-origin: border-box;
+  /*
+    border-box : 박스 모델의 가장 외곽 테두리(border)가 기준
+    padding-box : 박스 모델에서 테두리 뺀 패딩(padding)이 기준
+    content-box : 박스 모델에서 내용 부분이 기준
+  */
+
+  /*배경 이미지 고정*/
+  background-attachment: scroll;
+  /*
+    scroll : 화면 스크롤과 함께 배경 이미지도 스크롤됨(기본값)
+    fixed : 화면 스크롤 되더라도 배경 이미지 고정
+  */
+
+  /*속성 하나로 배경 이미지 제어*/
+  background:url(경로) no-repeat fixed right bottom;
+  
+}

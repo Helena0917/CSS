@@ -1,0 +1,10 @@
+/*색상과 배경을 위한 스타일*/
+
+/*웹에서 색상 표현법*/
+
+P{
+  color: rgb(red, green, blue);
+  color: rgba(red, green, blue, alpha); /*alpha 값은 투명도*/
+  color: blue;
+ 
+}

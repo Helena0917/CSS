@@ -1,0 +1,15 @@
+/*색상과 배경을 위한 스타일*/
+
+/*그라데이션 효과로 배경 디자인*/
+
+p{
+  /*선형 그라데이션*/
+  background: linear-gradient(각도 to 방향, color-stop,[color-stop]);
+
+  /*원형 그라데이션*/
+  background:radial-gradient(최종 모양 크기 at 위치, color-stop,[color-stop]);
+
+  /*그라데이션 반복*/
+  background :repeating-linear-gradient();
+  background :repeating-radial-gradient();
+}
