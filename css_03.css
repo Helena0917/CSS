@@ -1,0 +1,57 @@
+/*기타 CSS 정리*/
+
+p{
+  box-sizing: content-box border-box;   /*박스 너비 기준 정하기*/
+
+  float: left right none;   /*왼쪽이나 오른쪽으로 배치*/
+
+  clear: none left right both;    /*float 속성 해제*/
+
+  position: static relative absolute fixed;   /*배치 방법 지정*/
+
+  visibility: visible hidden collapse;    /*요소 보이게 하거나 보이지 않게 하기*/
+
+  z-index: 숫자;    /*요소 쌓는 순서 정하기*/
+
+  column-width: 크기 auto;    /*단의 너비 고정하고 다단 구성*/
+
+  column-count: 숫자 auto;    /*단의 개수 고정하고 다단 구성*/
+
+  column-gap: 크기 normal;    /*단과 단 사이 여백 지정*/
+
+  column-rule-color: 색상;    /*구분선의 색상 지정*/
+  column-rule-style: none hidden dotted dashed solid double groove ridge inset outset;    /*구분선의 스타일 지정*/
+  column-rule-width: 크기 thin medium thick;    /*구분선의 너비 지정*/
+
+  break-after: column avoid-column;   /*다단 위치 지정 : 특정 요소 뒤*/
+  break-before: column avoid-column;  /*다단 위치 지정 : 특정 요소 앞*/
+  break-inside: column avoid-column;  /*다단 위치 지정 : 특정 요소 안*/
+                                      /*column : 단 나눔 | avoid-column : 단 나누지 않음*/
+
+  column-span: 1 all;   /*여러 단 하나로 합치기*/
+
+
+  /*표 스타일*/
+
+
+  caption-side: top bottom;   /*표 제목 위치 정하기*/
+
+  border: 1px solid black;    /*표 테두리 스타일 결정*/
+
+  border-collapse: collapse separate;   /*테두리 통합,분리하기*/
+
+  border-spacing: 크기;   /*인접한 셀 테두리 사이 거리 지정*/
+
+  empty-cells: show hide;   /*빈 셀의 표시 여부 지정*/
+
+  width: 300px;   /*표 너비 지정*/
+
+  height: 300px;    /*표 높이 지정*/
+
+  table-layout: fixed auto;   /*콘텐츠에 맞게 셀 너비 지정*/
+
+  text-align: left right center;    /*셀 안에서 수평 정렬*/
+
+  vertical-align: baseline top bottom middle sub super text-top text-bottom 길이 값 백분율 값;  /*셀 안에서 수직 정렬*/
+  
+}
